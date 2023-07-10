@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | spitFire Homes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-***" crossorigin="anonymous" />
+
 </head>
 <body>
+  <section>
     <nav class="navbar">
         <div class="container">
           <ul class="nav-section">
@@ -26,6 +29,33 @@
           </div>
         </div>
       </nav>
-      
+
+      <div class="video-container">
+        <video id="myVideo" autoplay muted>
+          <source src="An_elegant_apartment_by_the_unique_story_interior_design_studio___Architecture___Interior_Shoots(720p).mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+         Creating sustainable communities,<br/> designed to inspire
+        </div>
+        <div class="white-board">
+          <input type="text" placeholder="Search by postcode or area..">
+          <div class="location-container">
+          <i style=' font-size: small; font-family: DIN 2014; padding-left: -10px; margin-left: -15%; font-weight: 600; opacity: 0.6;' class='fas'>&#xf05b; CURRENT LOCATION</i>
+          <button>FIND A HOME</button>
+        </div>
+        </div>
+    
+      </div>
+  
+    </section>
+
+
+
+    <script>
+      var video = document.getElementById("myVideo");
+      video.addEventListener("loadedmetadata", function() {
+        video.currentTime = 23; 
+      });
+    </script>   
 </body>
 </html>

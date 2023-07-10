@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
     background-color: #ffffff;
     padding: 40px;
@@ -17,6 +22,8 @@
   .nav-section1{
     display: inline-block;
     margin-right: 1px;
+    position: relative;
+    top: 20px;
   }
   
   a {
@@ -39,7 +46,7 @@
     flex-direction: column;
     align-items: center;
     padding-left: 730px;
-    margin-top: -35px;
+    margin-top: -25px;
   }
   
   .upper-text,
@@ -87,6 +94,8 @@
     margin-left: 875%;
     margin-top: -40%;
     font-size: 200%;
+    position: relative;
+    top: 5px;
   }
 
   
@@ -97,6 +106,90 @@
   margin: 6px 0;
   transition: 0.4s;
   margin-top: 4%;
+  position: relative;
+  top: 17px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+  overflow: hidden;
+  margin-top: -1%;
+}
+
+.video-container video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  filter: brightness(50%) contrast(90%);
+}
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  margin-top: -9%;
+  line-height: 66px;
+  font-family: 'DIN 2014', sans-serif;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+}
+
+.white-board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  margin-top: 0.5%;
+  padding: 45px;
+  width: 980px; 
   
+}
+
+.white-board input[type="text"] {
+  width: 260px;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  font-family: 'DIN 2014', sans-serif;
+  opacity: 0.6;
+}
+
+.white-board .location-container {
+  display: flex;
+  align-items: center;
+  margin-top: -5%;
+  margin-left: 68%;
+}
+
+
+
+.white-board button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #b7a685;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 5%;
+  height: 55px;
+  width: 190px;
+}
+
+.white-board button:hover {
+  background-color: gray;
 }
 
