@@ -6,11 +6,15 @@ body {
 .navbar {
     background-color: #ffffff;
     padding: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
   }
   
   .container {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 
   .nav-section{
@@ -283,4 +287,82 @@ body {
  color: #b7a685;
  font-size: 14px;
  font-weight: 600;
+}
+
+.container_3 {
+  position: relative;
+}
+
+.g{
+position: relative;
+ display: inline;
+  
+}
+
+.sofa{
+  width: 50%;
+  margin-top: 5%;
+  float: right;
+}
+
+.grass{
+  width: 50%;
+  height: 704px;
+  margin-top: 5%;
+  float: left;
+  opacity: 0.6;
+  filter: brightness(50%) contrast(90%);
+}
+
+.text-container1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.text-container1 h1 {
+  
+  margin-left: -600px;
+  margin-top: 900px;
+  font-size: 26Px;
+  font-weight: 300;
+  font-family: 'DIN 2014', sans-serif;
+}
+
+.text-container1 button {
+
+  margin-left: -550px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 55px;
+  width: 190px;
+  
+
+
+}
+
+.textcontainer1 button:hover {
+  background-color: black;
+  color: white;
+}
+
+.text-container1 p {
+  margin-left: -850px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  font-family: 'DIN 2014', sans-serif;
+  margin-top: 30px;
 }
